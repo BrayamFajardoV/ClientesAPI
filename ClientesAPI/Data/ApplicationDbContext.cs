@@ -15,6 +15,7 @@ namespace ClientesAPI.Data
         }
 
         public DbSet<Cliente> cliente { get; set; }
+        public DbSet<User> Users { get; set; }
 
         
     }

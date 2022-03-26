@@ -43,6 +43,8 @@ namespace ClientesAPI
 
             services.AddScoped<IClienteRepository, ClienteRepository>();
 
+            services.AddScoped<IUserRepository, UserRepository>();
+
             /*----------------------------------------------*/
 
             services.AddControllers();
