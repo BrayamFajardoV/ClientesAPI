@@ -34,13 +34,13 @@ namespace ClientesAPI.Controllers
 
                 }, userDTO.Password);
 
-            if (respuesta == -1)
+            if (respuesta == "Usuario Existente")
             {
                 _responseDTO.IsSuccess = false;
                 _responseDTO.DisplayMessage = ("Usuario ya existente");
                 return BadRequest(_responseDTO);
             }
-            if (respuesta == -500)
+            if (respuesta == "Error al registrar")
             {
                 _responseDTO.IsSuccess = false;
                 _responseDTO.DisplayMessage = "Error al crear el usuario";
